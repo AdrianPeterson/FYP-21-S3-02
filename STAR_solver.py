@@ -1,5 +1,5 @@
-from model import Generator
-from model import Discriminator
+from STAR_model import Generator
+from STAR_model import Discriminator
 from torch.autograd import Variable
 from torchvision.utils import save_image
 import torch
