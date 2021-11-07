@@ -1,6 +1,6 @@
-# Welcome
+## Welcome
 
-The following GUI 
+The following GUI is to display the ability of both STARGANs and First-Order-Motion Model. Instructions on how to use the GUI will be in the Google Colab Notebook itself linked below.
 
 Google Colab GUI: https://colab.research.google.com/drive/1FJW1kSI5ZVKVoS7Na8SF-uPHcFPEeYd5?usp=sharing
 
