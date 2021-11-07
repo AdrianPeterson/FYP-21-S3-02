@@ -28,6 +28,7 @@ year={2018}
 }
 ```
 Direct links to original repostories:
+
 https://github.com/AliaksandrSiarohin/first-order-model
 https://github.com/graphemecluster/first-order-model-demo
 https://github.com/yunjey/stargan
