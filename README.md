@@ -28,8 +28,11 @@ year={2018}
 }
 ```
 Direct links to original repostories:
-
+1) First-Order-Motion-Model
 https://github.com/AliaksandrSiarohin/first-order-model
+2) First-Order-Motion-Model demo
 https://github.com/graphemecluster/first-order-model-demo
+3) STARGANs
 https://github.com/yunjey/stargan
+4) Face-alignment
 https://github.com/1adrianb/face-alignment
