@@ -27,4 +27,8 @@ year={2018}
   year={2017}
 }
 ```
-
+Direct links to original repostories:
+https://github.com/AliaksandrSiarohin/first-order-model
+https://github.com/graphemecluster/first-order-model-demo
+https://github.com/yunjey/stargan
+https://github.com/1adrianb/face-alignment
