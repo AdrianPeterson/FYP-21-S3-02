@@ -6,7 +6,7 @@ import torch
 import os
 import random
 
-
+# Preprocess celeba dataset 
 class CelebA(data.Dataset):
     """Dataset class for the CelebA dataset."""
 
@@ -22,12 +22,13 @@ class CelebA(data.Dataset):
         self.attr2idx = {}
         self.idx2attr = {}
         self.preprocess()
-
+        
+        # Split the dataset to train images and test images
         if mode == 'train':
             self.num_images = len(self.train_dataset)
         else:
             self.num_images = len(self.test_dataset)
-
+    
     def preprocess(self):
         """Preprocess the CelebA attribute file."""
         lines = [line.rstrip() for line in open(self.attr_path, 'r')]
