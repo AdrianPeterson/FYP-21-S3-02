@@ -9,7 +9,7 @@ import os
 import time
 import datetime
 
-
+# Class is to take arguments passed and perform functions with configurations set
 class Solver(object):
     """Solver for training and testing StarGAN."""
 
