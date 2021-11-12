@@ -22,7 +22,10 @@ def main(config):
     if not os.path.exists(config.result_dir):
         os.makedirs(config.result_dir)
 
-    # Data loader.
+    # Data loader
+    # Load the dataset based on arguments given. For our case, we are using
+    # celeba_loader as we are changing the attributes of an image i.e. hair color etc.
+    # instead of expressions. Expressions will be changed with the First-Order-Model
     celeba_loader = None
     rafd_loader = None
 
@@ -37,6 +40,8 @@ def main(config):
     
 
     # Solver for training and testing StarGAN.
+    # Configurations are passed in via the generate() function in
+    # the StarGANs GUI, set to "test"
     solver = Solver(celeba_loader, rafd_loader, config)
 
     if config.mode == 'train':
@@ -52,6 +57,7 @@ def main(config):
 
 
 if __name__ == '__main__':
+    # Pass in arguments set in generate() function in StarGANs GUI
     parser = argparse.ArgumentParser()
 
     # Model configuration.
