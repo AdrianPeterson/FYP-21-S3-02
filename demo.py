@@ -21,6 +21,8 @@ from scipy.spatial import ConvexHull
 if sys.version_info[0] < 3:
     raise Exception("You must use Python 3 or higher. Recommended version is Python 3.7")
 
+# Load checkpoints for generator and keypoint detector and move
+# to GPU if available
 def load_checkpoints(config_path, checkpoint_path, cpu=False):
 
     with open(config_path) as f:
@@ -53,7 +55,7 @@ def load_checkpoints(config_path, checkpoint_path, cpu=False):
     
     return generator, kp_detector
 
-
+# Make the animations based on driving_video on source_image
 def make_animation(source_image, driving_video, generator, kp_detector, relative=True, adapt_movement_scale=True, cpu=False):
     with torch.no_grad():
         predictions = []
