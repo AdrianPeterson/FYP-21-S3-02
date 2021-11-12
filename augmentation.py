@@ -16,6 +16,8 @@ import warnings
 
 from skimage import img_as_ubyte, img_as_float
 
+# Functions to mutate clips from training so generator does not overlearn one input
+# Similar to not overfitting in other supervised models
 
 def crop_clip(clip, min_h, min_w, h, w):
     if isinstance(clip[0], np.ndarray):
