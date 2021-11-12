@@ -11,6 +11,10 @@ import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
 
+# Python functions to find the face of a person in a video and crop a 256 x 256 size around that face
+# This limits the margin of error when the keypoint detector tries to find the face in the video by
+# limiting the background noise or interference by other objects
+
 def extract_bbox(frame, fa):
     if max(frame.shape[0], frame.shape[1]) > 640:
         scale_factor =  max(frame.shape[0], frame.shape[1]) / 640.0
